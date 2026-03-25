@@ -4,13 +4,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/euclid-circular-b" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
 <body>
-
-
+    <header>
+        <!-- Header -->
+        <div class="bg-[var(--light-mode-lightGrey)]">
+            <div class="grid grid-flow-col  p-[10px_0px] justify-end gap-6 myContainer max-[1280px]:hidden">
+                <a class="text-[var(--secondary-font-color)] text-[14px] leading-[var(--xx-small-ln)]" href="#">Bank
+                    haqqında</a>
+                <a class="text-[var(--secondary-font-color)] text-[14px] leading-[var(--xx-small-ln)]"
+                    href="#">Oferta</a>
+                <a class="text-[var(--secondary-font-color)] text-[14px] leading-[var(--xx-small-ln)]"
+                    href="#">Tariflər</a>
+                <a class="text-[var(--secondary-font-color)] text-[14px] leading-[var(--xx-small-ln)]" href="#">FAQ</a>
+                <div class="relative">
+                    <button
+                        class=" langBtn flex items-center gap-1 text-[var(--secondary-font-color)] text-[14px] leading-[var(--xx-small-ln)]">
+                        AZ<i class=" arrowIcon fa-solid fa-angle-down transition-transform duration-200"></i>
+                    </button>
+                    <div
+                        class=" langMenu z-[2] hidden absolute right-0 mt-2 bg-white shadow-md rounded overflow-hidden">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-sm">RU</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-sm">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navBar -->
+        <div class="myContainer mobileContainer">
+            <div class=" grid grid-flow-col  max-[1280px]:justify-between  max-[1280px]:items-center mt-[25px]   ">
+                <!-- barsMenu --> <!-- burger -->
+                <div id="menuBtn" class="  hidden max-[1280px]:flex ">
+                    <i id="icon" class="fa-solid fa-bars"></i>
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                </div>
+                <!-- navLogo -->
+                <div>
+                    <a href="./index.html">
+                        <img class="w-[125px] max-[1280px]:w-[80px] " src="./assets/image/navLogo.033cf4ea.svg"
+                            alt="navLogo">
+                    </a>
+                </div>
+                <!-- mobileLangBtn -->
+                <div class="relative hidden  max-[1280px]:grid  ">
+                    <button
+                        class=" langBtn flex items-center gap-1 text-[var(--secondary-font-color)] text-[13px] leading-[var(--xx-small-ln)]">
+                        AZ<i class=" arrowIcon fa-solid fa-angle-down transition-transform duration-200"></i>
+                    </button>
+                    <div
+                        class=" langMenu z-[2] hidden absolute right-0 mt-2 bg-white shadow-md rounded overflow-hidden max-[1280px]:mt-4 ">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-sm">EN</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-sm">RU</a>
+                    </div>
+                </div>
+                <!-- navPages -->
+                <div class="grid grid-flow-col justify-end gap-[20px]  items-center relative max-[1280px]:hidden ">
+                    <!-- \\\\\\\\\\\\\\\\\\Məhsullar\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                    <div class=" navItems text-[18px] leading-[28px] text-[#000]  ">
+                        <div class="navPages">
+                            <a href="#">Məhsullar</a>
+                            <i class=" arrowIconNav fa-solid fa-angle-down transition-transform duration-200  "></i>
+                        </div>
+                        <!----------------- dropDown_Məhsullar------------------ -->
+                        <div
+                            class=" text-[15px]  dropDownMenu absolute p-[12px_10px] hidden top-[40px] bg-[var(--white)] shadow-[0px_2px_8px_0px_rgba(0,0,0,0.12)] rounded-lg   flex flex-col gap-[10px] ">
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Referal proqramı</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">ƏDV-nin geri qaytarılması</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Cashback</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Ödənişlər</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- \\\\\\\\\\\\\\\\\\Kartlar\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                    <div class="navItems text-[18px] leading-[28px] text-[#000]  ">
+                        <div class="navPages">
+                            <a href="#">Kartlar</a>
+                            <i class=" arrowIconNav fa-solid fa-angle-down transition-transform duration-200"></i>
+                        </div>
+                        <!----------------- dropDown_Kartlar------------------ -->
+                        <div
+                            class="text-[15px] dropDownMenu absolute p-[12px_10px] hidden top-[40px] bg-[var(--white)] shadow-[0px_2px_8px_0px_rgba(0,0,0,0.12)] rounded-lg   flex flex-col gap-[10px] ">
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Bütün kartlar</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Leo Black kartı</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Uşaq Kartı</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Ödənişlər</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- \\\\\\\\\\\\\\\\\\Kreditlər\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                    <div class=" navItems text-[18px] leading-[28px] text-[#000]  ">
+                        <div class="navPages">
+                            <a href="#">Kreditlər</a>
+                            <i class=" arrowIconNav fa-solid fa-angle-down transition-transform duration-200"></i>
+                        </div>
+                        <!----------------- dropDown_Kreditlər------------------ -->
+                        <div
+                            class=" text-[15px] dropDownMenu absolute p-[2px_10px] hidden top-[40px] bg-[var(--white)] shadow-[0px_2px_8px_0px_rgba(0,0,0,0.12)] rounded-lg   flex flex-col gap-[10px] ">
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Kredit limiti</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Taksit</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Hissə-Hissə ödəniş</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Nağd kredit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- \\\\\\\\\\\\\\\\\\Yığımlar\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                    <div class=" navItems text-[18px] leading-[28px] text-[#000]  ">
+                        <div class="navPages">
+                            <a href="#">Yığımlar</a>
+                            <i class=" arrowIconNav fa-solid fa-angle-down transition-transform duration-200"></i>
+                        </div>
+                        <!----------------- dropDown_Yığımlar------------------ -->
+                        <div
+                            class="text-[15px] dropDownMenu absolute p-[12px_10px] hidden top-[40px] bg-[var(--white)] shadow-[0px_2px_8px_0px_rgba(0,0,0,0.12)] rounded-lg   flex flex-col gap-[10px] ">
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Depozitlər</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Xəzinə</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Sərmayələr</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition whitespace-nowrap ">
+                                <a href="#">İnvestisiyanın əsasları üzrə təlim</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- \\\\\\\\\\\\\\\\\\BiznesÜçün\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                    <div class="navItems text-[18px] leading-[28px] text-[#000]">
+                        <div class="navPages">
+                            <a href="#">Biznes üçün</a>
+                            <i class=" arrowIconNav  fa-solid fa-angle-down transition-transform duration-200"></i>
+                        </div>
+                        <!----------------- dropDown_Biznes üçün------------------ -->
+                        <div
+                            class="text-[15px] dropDownMenu absolute p-[12px_10px] hidden top-[40px] bg-[var(--white)] shadow-[0px_2px_8px_0px_rgba(0,0,0,0.12)] rounded-lg   flex flex-col gap-[10px] ">
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition whitespace-nowrap  ">
+                                <a href="#">Referal proqramı</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">Biznes hesabı</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition  ">
+                                <a href="#">LeoPOS</a>
+                            </div>
+                            <div class="hover:bg-gray-100 p-[1px_5px] rounded-lg  transition   ">
+                                <a href="#">LeoShöt </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MOBILE MENU -->
+            <div id="mobileMenu"
+                class="overflow-y-auto  transition-all duration-300 bg-white px-5  hidden min-[1280px]:hidden ">
+                <div class="py-4 space-y-4">
+                    <div class="pb-3">
+                        <div class="flex justify-between navItem cursor-pointer">
+                            <span>Məhsullar</span>
+                            <i class="fa-solid fa-angle-down arrow transition-transform duration-300"></i>
+                        </div>
+                        <!-- dropDown -->
+                        <div class="dropdown max-h-0 overflow-hidden transition-all duration-300">
+                            <div class="mt-2  p-[0px_10px] space-y-2">
+                                <div>
+                                    <a href="#">Referal proqramı</a>
+                                </div>
+                                <div>
+                                    <a href="#">ƏDV-nin geri qaytarılması</a>
+                                </div>
+                                <div>
+                                    <a href="#">Cashback</a>
+                                </div>
+                                <div>
+                                    <a href="#">Ödənişlər</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-3">
+                        <div class="flex justify-between navItem cursor-pointer">
+                            <span>Kartlar</span>
+                            <i class="fa-solid fa-angle-down arrow transition-transform duration-300"></i>
+                        </div>
+                        <div class="dropdown max-h-0 overflow-hidden transition-all duration-300">
+                            <div class="mt-2  p-[0px_10px] space-y-2">
+                                <div>
+                                    <a href="#">Bütün kartlar</a>
+                                </div>
+                                <div>
+                                    <a href="#">Leo Black kartı</a>
+                                </div>
+                                <div>
+                                    <a href="#">Leo Prime</a>
+                                </div>
+                                <div>
+                                    <a href="#">Uşaq Kartı</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-3">
+                        <div class="flex justify-between navItem cursor-pointer">
+                            <span>Kreditlər</span>
+                            <i class="fa-solid fa-angle-down arrow transition-transform duration-300"></i>
+                        </div>
+                        <div class="dropdown max-h-0 overflow-hidden transition-all duration-300">
+                            <div class="mt-2  p-[0px_10px] space-y-2">
+                                <div>
+                                    <a href="#">Kredit limiti</a>
+                                </div>
+                                <div>
+                                    <a href="#">Taksit</a>
+                                </div>
+                                <div>
+                                    <a href="#">Hissə-Hissə ödəniş</a>
+                                </div>
+                                <div>
+                                    <a href="#">Nağd kredit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-3">
+                        <div class="flex justify-between navItem cursor-pointer">
+                            <span>Yığımlar</span>
+                            <i class="fa-solid fa-angle-down arrow transition-transform duration-300"></i>
+                        </div>
+                        <div class="dropdown max-h-0 overflow-hidden transition-all duration-300">
+                            <div class="mt-2  p-[0px_10px] space-y-2">
+                                <div>
+                                    <a href="#">Depozitlər</a>
+                                </div>
+                                <div>
+                                    <a href="#">Xəzinə</a>
+                                </div>
+                                <div>
+                                    <a href="#">Sərmayələr</a>
+                                </div>
+                                <div>
+                                    <a href="#">İnvestisiyanın əsasları üzrə təlim</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-3">
+                        <div class="flex justify-between navItem cursor-pointer">
+                            <span>Biznes üçün</span>
+                            <i class="fa-solid fa-angle-down arrow transition-transform duration-300"></i>
+                        </div>
+                        <div class="dropdown max-h-0 overflow-hidden transition-all duration-300">
+                            <div class="mt-2  p-[0px_10px] space-y-2">
+                                <div>
+                                    <a href="#">Referal proqramı</a>
+                                </div>
+                                <div>
+                                    <a href="#">ƏDV-nin geri qaytarılması</a>
+                                </div>
+                                <div>
+                                    <a href="#">Cashback</a>
+                                </div>
+                                <div>
+                                    <a href="#">Ödənişlər</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
 
     <script src="./main.js"></script>
 </body>
