@@ -2,23 +2,16 @@
     font-family: 'Euclid Circular B', sans-serif;
 }
 
+.bg-leo {
+    background: linear-gradient(65deg, #98c7fe 0%, #a5f6ff 53.48%, #adfff0 100%),
+        linear-gradient(185deg, #b3f9d8 0%, #e3f5b0 100%),
+        linear-gradient(58deg, #ffe7b8 30.98%, #ffe2b8 66.98%, #ffbfb8 100.57%);
+}
+
 .myContainer {
     max-width: 970px;
     margin: 0 auto;
     width: 100%;
-}
-
-.mobileContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-@media (min-width: 1280px) {
-    .mobileContainer {
-        max-width: 970px;
-        padding: 0;
-    }
 }
 
 @media (max-width: 1279px) {
@@ -27,6 +20,19 @@
         padding: 0 20px;
     }
 }
+
+.laptopContainer {
+    max-width: 970px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 1279px) {
+    .laptopContainer {
+        max-width: 688px;
+    }
+}
+
 
 :root {
     --ff: "Euclid Circular B", sans-serif;

@@ -39,8 +39,9 @@
             </div>
         </div>
         <!-- navBar -->
-        <div class="myContainer mobileContainer">
-            <div class=" grid grid-flow-col  max-[1280px]:justify-between  max-[1280px]:items-center mt-[25px]   ">
+        <div class="myContainer ">
+            <div
+                class=" grid grid-flow-col   items-center  max-[1280px]:justify-between  max-[1280px]:items-center h-[96px] max-[1280px]:h-[68px]  ">
                 <!-- barsMenu --> <!-- burger -->
                 <div id="menuBtn" class="  hidden max-[1280px]:flex ">
                     <i id="icon" class="fa-solid fa-bars"></i>
@@ -68,7 +69,7 @@
                 <!-- navPages -->
                 <div class="grid grid-flow-col justify-end gap-[20px]  items-center relative max-[1280px]:hidden ">
                     <!-- \\\\\\\\\\\\\\\\\\Məhsullar\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-                    <div class=" navItems text-[18px] leading-[28px] text-[#000]  ">
+                    <div class=" navItems text-[18px] leading-[28px] text-[#000] z-[1] ">
                         <div class="navPages">
                             <a href="#">Məhsullar</a>
                             <i class=" arrowIconNav fa-solid fa-angle-down transition-transform duration-200  "></i>
@@ -91,7 +92,7 @@
                         </div>
                     </div>
                     <!-- \\\\\\\\\\\\\\\\\\Kartlar\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-                    <div class="navItems text-[18px] leading-[28px] text-[#000]  ">
+                    <div class="navItems text-[18px] leading-[28px] text-[#000]  z-[1]">
                         <div class="navPages">
                             <a href="#">Kartlar</a>
                             <i class=" arrowIconNav fa-solid fa-angle-down transition-transform duration-200"></i>
@@ -114,7 +115,7 @@
                         </div>
                     </div>
                     <!-- \\\\\\\\\\\\\\\\\\Kreditlər\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-                    <div class=" navItems text-[18px] leading-[28px] text-[#000]  ">
+                    <div class=" navItems text-[18px] leading-[28px] text-[#000] z-[1] ">
                         <div class="navPages">
                             <a href="#">Kreditlər</a>
                             <i class=" arrowIconNav fa-solid fa-angle-down transition-transform duration-200"></i>
@@ -137,7 +138,7 @@
                         </div>
                     </div>
                     <!-- \\\\\\\\\\\\\\\\\\Yığımlar\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-                    <div class=" navItems text-[18px] leading-[28px] text-[#000]  ">
+                    <div class=" navItems text-[18px] leading-[28px] text-[#000] z-[1] ">
                         <div class="navPages">
                             <a href="#">Yığımlar</a>
                             <i class=" arrowIconNav fa-solid fa-angle-down transition-transform duration-200"></i>
@@ -160,7 +161,7 @@
                         </div>
                     </div>
                     <!-- \\\\\\\\\\\\\\\\\\BiznesÜçün\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-                    <div class="navItems text-[18px] leading-[28px] text-[#000]">
+                    <div class="navItems text-[18px] leading-[28px] text-[#000] z-[1] ">
                         <div class="navPages">
                             <a href="#">Biznes üçün</a>
                             <i class=" arrowIconNav  fa-solid fa-angle-down transition-transform duration-200"></i>
@@ -187,14 +188,14 @@
             <!-- MOBILE MENU -->
             <div id="mobileMenu"
                 class="overflow-y-auto  transition-all duration-300 bg-white px-5  hidden min-[1280px]:hidden ">
-                <div class="py-4 space-y-4">
+                <div class="py-4 space-y-4  ">
                     <div class="pb-3">
                         <div class="flex justify-between navItem cursor-pointer">
                             <span>Məhsullar</span>
                             <i class="fa-solid fa-angle-down arrow transition-transform duration-300"></i>
                         </div>
                         <!-- dropDown -->
-                        <div class="dropdown max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="dropdown max-h-0 overflow-hidden transition-all duration-300  ">
                             <div class="mt-2  p-[0px_10px] space-y-2">
                                 <div>
                                     <a href="#">Referal proqramı</a>
@@ -304,6 +305,56 @@
         </div>
         </div>
     </header>
+
+    <!-- secTion-1 -->
+    <section
+        class="bg-leo m-4  max-[1280px]:m-[0_20px_100px] rounded-[120px_240px] max-[1280px]:rounded-[40px] p-[60px_0]  max-[1280px]:p-[65px_0] ">
+        <div class="laptopContainer grid grid-cols-2  max-[768px]:p-[0px_15px] max-[768px]:grid-cols-1 relative ">
+            <!-- sec_left -->
+            <div class="grid gap-[40px]  max-[768px]:gap-[30px] max-[768px]:order-2 max-[768px]:justify-center ">
+                <p
+                    class=" max-[1280px]:text-[30px] text-[length:var(--h1)] leading-[length:var(--h1-ln)]  text-[var(--default-font-color)] font-bold leading-tight whitespace-pre-line ">
+                    15 000 ₼-dək kredit
+                    limiti olan pulsuz kart</p>
+                <p class="text-[length:var(--normal)] max-[1280px]:text-[15px] leading-tight whitespace-pre-line ">
+                    Smartfondakı bank. Heç bir növbə, əlavə
+                    sənədləşmə və gizli ödənişlər yoxdur💃</p>
+                <p class=" max-[1280px]:hidden  text-[length:var(--normal)] leading-[length:var(--normal-ln)] ">QR
+                    kodunu skan edin və tətbiqi
+                    yükləyin</p>
+                <div
+                    class="grid grid-cols-[30%_30%]  max-[768px]:justify-center max-[768px]:grid-cols-[35%_50%] items-center  justify-items-start">
+                    <div class="inline-block p-[12px] max-[1280px]:hidden rounded-[16px] bg-white">
+                        <img class="w-[84px] h-[84px]  " src="./assets/image/QR_.fcab0e49.svg" alt="qrCode">
+                    </div>
+                    <div class="grid gap-[16px] max-[1280px]: max-[1280px]:grid-cols-[100%_100%]">
+                        <div class="">
+                            <a href="#">
+                                <img class="w-[135px] h-[40px] object-contain "
+                                    src="./assets/image/appStore-az.644498f3.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="">
+                            <a href="#">
+                                <img class="w-[135px] h-[40px] object-contain " src="./assets/image/googlePlay.png"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sec_right -->
+            <div class=" max-[768px]:order-1 justify-self-end max-[768px]:justify-self-center  ">
+                <img class="w-[566px] max-[1280px]:w-[396px]  max-[768px]:w-[280px] absolute max-[768px]:static max-[792px]:left-[45%]   left-[50%] top-[-30px] "
+                    src="./assets/image/mobilmg_az.webp" alt="mobilmg">
+            </div>
+            <div
+                class="w-[480px] h-[320px] absolute bottom-[-135px] left-[57%] max-[768px]:left-[70px] max-[768px]:bottom-[250px] max-[300px]:w-[180px]
+                max-[430px]:top-[120px] transform -translate-x-1/2  max-[1280px]:w-[240px] max-[1280px]:h-[160px] max-[1280px]:left-[50%] ">
+                <img src="./assets/image/SecImg.png" alt="" class="w-full ">
+            </div>
+        </div>
+    </section>
 
     <script src="./main.js"></script>
 </body>
