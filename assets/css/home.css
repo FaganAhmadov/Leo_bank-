@@ -21,6 +21,15 @@
     margin: 0 auto;
 }
 
+@media (max-width: 1279px) {
+    .navContainer {
+        max-width: 1210px;
+        /* 1279px-dən kiçik ekranlar üçün */
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
 /* Laptop container */
 @media (max-width: 1279px) {
     .myContainer {
@@ -31,14 +40,6 @@
     }
 }
 
-@media (max-width: 1279px) {
-    .navContainer {
-        max-width: 1210px;
-        /* 1279px-dən kiçik ekranlar üçün */
-        width: 100%;
-        padding: 0 20px;
-    }
-}
 
 /* Tablet / Mobile container */
 @media (max-width: 767px) {
@@ -52,9 +53,32 @@
 /* Small mobile container */
 @media (max-width: 375px) {
     .myContainer {
-        max-width: 240px;
+        max-width: 250px;
         width: 100%;
-        padding: 0 10px;
+        padding: 0 0px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .secContainer {
+        max-width: 688px;
+        /* 1279px-dən kiçik ekranlar üçün */
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .secContainer {
+        max-width: 295px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .secContainer {
+        max-width: 250px;
+        width: 100%;
+        padding: 0 0px;
     }
 }
 
