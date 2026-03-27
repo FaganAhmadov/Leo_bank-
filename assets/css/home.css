@@ -8,30 +8,57 @@
         linear-gradient(58deg, #ffe7b8 30.98%, #ffe2b8 66.98%, #ffbfb8 100.57%);
 }
 
+/* Desktop container */
 .myContainer {
     max-width: 970px;
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
 }
 
+.navContainer {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Laptop container */
 @media (max-width: 1279px) {
     .myContainer {
-        max-width: 1240px;
+        max-width: 688px;
+        /* 1279px-dən kiçik ekranlar üçün */
+        width: 100%;
         padding: 0 20px;
     }
 }
 
-.laptopContainer {
-    max-width: 970px;
-    margin: 0 auto;
-    width: 100%;
-}
-
 @media (max-width: 1279px) {
-    .laptopContainer {
-        max-width: 688px;
+    .navContainer {
+        max-width: 1210px;
+        /* 1279px-dən kiçik ekranlar üçün */
+        width: 100%;
+        padding: 0 20px;
     }
 }
+
+/* Tablet / Mobile container */
+@media (max-width: 767px) {
+    .myContainer {
+        max-width: 295px;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* Small mobile container */
+@media (max-width: 375px) {
+    .myContainer {
+        max-width: 240px;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+
 
 
 :root {
